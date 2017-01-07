@@ -1,1 +1,50 @@
-under construction
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS - Intro to Web Dev</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- attribution: Font Awesome Icons fontawesome.io -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- attribution: Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
+        <!-- The following 2 css files are from the Skeleton framework, created by Dave Gamache
+            http://getskeleton.com/ licensed under MIT License
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+        <link rel="stylesheet" href="css/style.css?">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-light.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2 class="noendpad">Intro to Web Development</h3>
+                <h4 class="noendpad">Cascading Style Sheets (CSS)</h4>
+                <h5 class="subtitle">UNSW CompClub</h5>
+            </header>
+            <article>
+                <h5 class="points">What is CSS?</h5>
+                <p>So far your HTML pages are full of text, headings, links and images. They may look rather dull, since they're the same black Times New Roman font on a white background. Since HTML is for describing the <em>structure</em> of the web page, we need something else to format it.</p>
+                <p>That's where CSS fits in. CSS (or Cascading Style Sheets) is the language for describing how elements are presented. It adds instructions for the layout, <span style="color: orange;background-color: darkslategrey">colours</span> and <span class="crazy">fonts</span> that are displayed in a webpage.</p>
+                <h5 class="points">Adding CSS formatting to your websites</h5>
+                <p>There are two ways to add CSS to your HTML pages. We'll show you the simpler two ways of doing this:</p>
+                <h6 class="points">1. Inline attribute</h6>
+                <p>CSS can be added inline to HTML tags using the <span class="code">style</span> attribute. This applies the formatting to a single HTML element.</p>
+                <pre><code class="html">&lt;!-- Note that these styles won't apply to other h1 or p tags, just these --&gt;
+&lt;h1 style="font-size: 40px;color: red;"&gt;This is a big red heading&lt;/h1&gt;
+&lt;p style="color: purple"&gt;Purple rain, purple rain! (R.I.P Prince :( )&lt;/p&gt;            </code></pre>
+                <!-- Note that these styles won't apply to other h1 or p tags, just these -->
+                <h1 style="font-size: 40px;color: red;">This is a big red heading</h1>
+                <p style="color: purple">Purple rain, purple rain! (R.I.P Prince :( )</p>
+                <h6 class="points">2. Using the <span class="code">&lt;style&gt;</span> tag</h5>
+                ...
+            </article>
+        </div>
+    </body>
+</html>

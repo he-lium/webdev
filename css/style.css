@@ -18,6 +18,10 @@ h1, h2, h3 {
     font-weight: 200;
 }
 
+h6 {
+    font-size: 2.0rem;
+}
+
 pre {
     overflow-x: auto;
 }
@@ -55,4 +59,9 @@ figure {
 
 .points {
     color: darkblue;
+}
+
+.crazy {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
 }
