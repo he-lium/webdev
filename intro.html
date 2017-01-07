@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-light.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
         <div class="container">
@@ -31,7 +34,7 @@
             
             <h5 class="points">A sample website</h5>
             <pre>
-            <code>
+            <code class="html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -49,7 +52,7 @@
             </pre>
             <h5 class="points">HTML Elements</h5>
             <p>A HTML element is made up of a <strong>start</strong> tag and an <strong>end</strong> tag, with the content of the element being within those tags. The content can be text, or even more elements, or be empty.</p>
-            <pre><code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></pre>
+            <pre><code class="html">&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></pre>
             <h5><span class="code">&lt;!DOCTYPE html&gt;</span> declaration</h5>
             <p>This DOCTYPE line is at the top of each HTML page. It tells the web browser that this is a HTML5 document.</p>
             <h5 class="points"><span class="code">&lt;html&gt;</span> tag</h5>
@@ -57,7 +60,7 @@
             HTML documents usually contain two main elements: the <span class="code">&lt;head&gt;</span> tag and the <span class="code">&lt;body&gt;</span> tag.</p>
             <h5 class="points"><span class="code">&lt;head&gt;</span></h5>
             The head tag is for storing descriptions and general info of the webpage. One of the 1elements that belongs in here is the <span class="code">&lt;title&gt;</span> tag, which displays the website title in the tab bar.
-            <pre><code>&lt;head&gt;
+            <pre><code class="html">&lt;head&gt;
     &lt;title&gt;My website&lt;/title&gt;
 &lt;/head&gt;</code></pre>
             <figure>
@@ -71,9 +74,9 @@
             <h5 class="points">Comments</h5>
             <p>
                 Comments aren't displayed to the user, but are there for you to help add documentation to your website. i.e. explain a section of code, write down ideas and things that need to be done.
-                <pre><code>
+                <pre><code class="html">
 &lt;!-- These comments can spread over multiple lines
-    and are not displaued by browser.
+    and are not displayed by browser.
     --&gt;
 &lt;h1&gt;Properties of beeswax&lt;/h1&gt;
 &lt;!-- TODO: add dot points from research --&gt;
@@ -83,7 +86,7 @@
             <p>
                 Section Headings are the visually important lines in your website and are like the table of contents. There are six header tags with different levels of importance; <span class="code">&lt;h1&gt;</span> being the highest level and <span class="code">&lt;h6&gt;</span> being the lowest.
             </p>
-            <pre><code>
+            <pre><code class="html">
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Some text here...&lt;/p&gt;
 
@@ -114,7 +117,7 @@
             </div>
             <h5 class="points">Paragraphs</h5>
             Paragraph elements are represented by <span class="code">&lt;p&gt;</span> <t></t>ags. Browsers automatically add some space before and after p tags
-            <pre><code>&lt;p&gt;This is an example paragraph.&lt;/p&gt;
+            <pre><code class="html">&lt;p&gt;This is an example paragraph.&lt;/p&gt;
 &lt;p&gt;The quick brown fox jumps over a lazy dog..&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, duo an quem alia nonumy. Id pri tantas intellegat. Tation menandri laboramus te per, vim erant tibique suscipiantur et, cum ei autem complectitur definitiones. In quod expetenda sit, te iusto ludus diceret eos, ridens suscipit delectus vix no. Sed eruditi urbanitas id, per no odio consequuntur, nec eripuit fabulas disputando no. Vix ut nemore omnium tritani, pri tractatos facilisis posidonium cu.&lt;/p&gt;
 &lt;p&gt;Nec an quod agam scripta. At ullum consequat constituam duo. Usu dicam assueverit at, sed case brute dicant ut, an pri verterem expetenda. Dolor discere pertinacia te mei, ad omnes doctus aliquid cum. Sed et quis erat dicat, habeo nostrum et eum, essent detraxit cum an. Summo veniam in vis, dicit sanctus sadipscing eu sea.&lt;/p&gt;
@@ -127,14 +130,14 @@
             </div>
             <h5 class="points">Page breaks</h5>
             <p><span class="code">&lt;br&gt;</span> is used to represent page breaks. They add a new line to split the content, rather than creating a new paragraph. It's used a lot for things like poems. Note that it does not need a closing tag, i.e. don't do <span class="code">&lt;/br&gt;</span></p>
-            <pre><code><p>
+            <pre><code class="html"><p>
 &lt;p&gt;Pretty women wonder where my secret lies.&lt;br&gt;I'm not cute or built to suit a fashion model's size&lt;br&gt;But when I start to tell them,&lt;br&gt;They think I'm telling lies.&lt;br&gt;I say,&lt;br&gt;It's in the reach of my arms&lt;br&gt;The span of my hips,&lt;br&gt;The stride of my step,&lt;br&gt;The curl of my lips.&lt;br&gt;I'm a woman&lt;br&gt;Phenomenally.&lt;br&gt;Phenomenal woman,&lt;br&gt;That's me.&lt;/p&gt;</p>
 </code></pre>
 <p>Pretty women wonder where my secret lies.<br>I'm not cute or built to suit a fashion model's size<br>But when I start to tell them,<br>They think I'm telling lies.<br>I say,<br>It's in the reach of my arms<br>The span of my hips,<br>The stride of my step,<br>The curl of my lips.<br>I'm a woman<br>Phenomenally.<br>Phenomenal woman,<br>That's me.</p>
             <h5 class="points">Hyperlinks</h5>
             <p>Links in HTML are represented by the <span class="code">&lt;a&gt;</span> tag and direct your browser to another destination i.e. a new website.</p>
 
-            <pre><code>&lt;p&gt;
+            <pre><code class="html">&lt;p&gt;
 &lt;a href="https://www.google.com.au/"&gt;This is a link to Google.&lt;/a&gt;&lt;br&gt;
 &lt;a href="https://www.google.com.au/" target="_blank"&gt;This one opens in a new tab.&lt;/a&gt;
 &lt;/p&gt;
@@ -149,7 +152,7 @@
             <p>
                 The <span class="code">&lt;img&gt;</span> tag is used to display images in HTML.<br>The <span class="code">src</span> attribute specifies the URL or location of the image, and the <span class="code">alt</span> attribute provides alternate text for the image if the user somehow cannot read it (slow connection, error or user is blind and using a screen reader).</p><p>Note that the tag does not require a closing tag, so no <span class="code">&lt;/img&gt;</span> is necessary.
             </p>
-            <pre><code>&lt;img src="images/bridge.jpg" alt="Sydney Harbour Bridge"&gt;
+            <pre><code class="html">&lt;img src="images/bridge.jpg" alt="Sydney Harbour Bridge"&gt;
 &lt;img src="https://unsplash.it/400/300" alt="A random image"&gt;
 &lt;p&gt;Source: &lt;a href="https://unsplash.it/"&gt;unsplash.it&lt;/a&gt;&lt;/p&gt;
 &lt;a href="https://blog.golang.org/gopher"&gt;&lt;img src="https://blog.golang.org/gopher/gopher.png" alt="The Go Gopher"&gt;&lt;/a&gt;
