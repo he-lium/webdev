@@ -5,10 +5,9 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: top-center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 206, 209, 0.5)), to(rgba(140, 206, 209, 0.5))), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
-    background-image: -webkit-linear-gradient(top, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
-    background-image: -moz-linear-gradient(top, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
-    background-image: linear-gradient(to bottom, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: -webkit-linear-gradient(rgba(0, 150, 152, 0.7), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: -o-linear-gradient(rgba(0, 150, 152, 0.7), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: linear-gradient(rgba(0, 150, 152, 0.7), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
     /*background: darkturquoise;*/
     /*00ced1*/
 }
@@ -104,4 +103,38 @@ figure {
 .stylised th, .stylised td {
   border: 1px solid #cecfd5;
   padding: 10px 15px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 200px;*/
+    overflow: hidden;
+}
+
+.menu li {
+    /*display: inline;*/
+    float: left;
+}
+
+.menu a, a.menu {
+    display: block;
+    width: 180px;
+    text-align: center;
+    background-color: #1E88E5;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu a:hover {
+    background-color: #42A5F5;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
