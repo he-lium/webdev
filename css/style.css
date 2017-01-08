@@ -1,8 +1,16 @@
 body {
     /*margin: 0 0 0 0;
     padding: 0 0;*/
-    font-family: "Roboto", sans-serif;
-    background-color: darkturquoise;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top-center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 206, 209, 0.5)), to(rgba(140, 206, 209, 0.5))), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: -webkit-linear-gradient(top, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: -moz-linear-gradient(top, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    background-image: linear-gradient(to bottom, rgba(0, 206, 209, 0.5), rgba(140, 206, 209, 0.5)), url(http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png);
+    /*background: darkturquoise;*/
+    /*00ced1*/
 }
 
 .container {
@@ -16,6 +24,10 @@ body {
 
 header {
     padding-top: 2.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3 {

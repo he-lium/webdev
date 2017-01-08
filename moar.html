@@ -28,7 +28,130 @@
                 <h4 class="noendpad">Additional elements</h4>
                 <h5 class="subtitle">UNSW CompClub</h5>
             </header>
-            <article></article>
+            <article>
+                <h5 class="points">Bold and italics</h5>
+                <p>The <span class="code">&lt;em&gt;</span> tag is used for emphasis/italics, and the <span class="code">&lt;strong&gt;</span> tag is used for marking text bold.</p>
+<pre><code class="html">&lt;p&gt;de Botton, 2002, &lt;em&gt;The Art of Travel&lt;/em&gt;, Penguin General UK&lt;br&gt;
+Handle the flask with care. &lt;strong&gt;Do not drop it or you may risk serious burns.&lt;/strong&gt;&lt;/p&gt;</code></pre>
+                <p>de Botton, 2002, <em>The Art of Travel</em>, Penguin General UK<br>
+                Handle the flask with care. <strong>Do not drop it or you may risk serious burns.</strong></p>
+                <h5 class="points">Lists</h5>
+                <p>Lists make up a large part of everyday life, and are useful for a wide range of applications, including:
+                    <ul>
+                        <li>Driving instructions</li>
+                        <li>Names for attendance</li>
+                        <li>Recipe ingredients and instructions</li>
+                        <li>Your collection of video games</li>
+                    </ul>
+                    and so on. HTML provides several ways to help display lists in websites.
+                </p>
+                <h6 class="points code">&lt;ol&gt;</h6>
+                <p>Use the <span class="code">&lt;ol&gt;</span> tag to display <em>ordered</em> lists, where the order is important and numbers are used as markers. The <span class="code">li</span> tag is used to represent the list items.</p>
+                <pre><code class="html">&lt;h6&gt;Top 10 Programming Languages on GitHub&lt;/h6&gt;
+&lt;ol&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+    &lt;li&gt;Ruby&lt;/li&gt;
+    &lt;li&gt;PHP&lt;/li&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;C#&lt;/li&gt;
+    &lt;li&gt;C&lt;/li&gt;
+    &lt;li&gt;Go&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                <h6>Top 10 Programming Languages on GitHub</h6>
+                <ol>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                    <li>PHP</li>
+                    <li>C++</li>
+                    <li>CSS</li>
+                    <li>C#</li>
+                    <li>C</li>
+                    <li>Go</li>
+                </ol>
+                <h6 class="points code">&lt;ul&gt;</h6>
+                <p>The <span class="code">&lt;ul&gt;</span> tag is used for <em>unordered</em> lists. Instead of numbers, it uses dot points as markers.</p>
+                <pre><code class="html">&lt;h6&gt;Popular types of Self-Balancing Binary Search Trees&lt;/h6&gt;
+&lt;ul&gt;
+    &lt;li&gt;2-3-4 Tree&lt;/li&gt;
+    &lt;li&gt;AVL Tree&lt;/li&gt;
+    &lt;li&gt;Red-black Tree&lt;/li&gt;
+    &lt;li&gt;Splay Tree&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <h6>Popular types of Self-Balancing Binary Search Trees</h6>
+                <ul>
+                    <li>2-3-4 Tree</li>
+                    <li>AVL Tree</li>
+                    <li>Red-black Tree</li>
+                    <li>Splay Tree</li>
+                </ul>
+                <h6 class="points">Styling Lists</h6>
+                <p>You can use CSS and the <span class="code">list-style-type</span> property to change what bullet points the list should use.</p>
+                <pre><code class="html">&lt;ul style="list-style-type: square"&gt;
+    &lt;li&gt;Caffeine&lt;/li&gt;
+    &lt;li&gt;Sugar&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <ul style="list-style-type: square; text-indent: 20px;">
+                    <li>Caffeine</li>
+                    <li>Sugar</li>
+                    <li>Milk</li>
+                </ul>
+                <p>A full list of bullet points can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank">here</a>.</p>
+                <h6 class="points">Lists in Lists</h6>
+                <p>Nesting a list inside another list.</p>
+                <pre><code class="html">&lt;h6&gt;Frameworks&lt;/h6&gt;
+&lt;ul style="list-style-type: disc"&gt;
+    &lt;li&gt;JavaScript
+        &lt;ul&gt;
+            &lt;li&gt;node.js&lt;/li&gt;
+            &lt;li&gt;React&lt;/li&gt;
+            &lt;li&gt;Angular&lt;/li&gt;
+            &lt;li&gt;jQuery&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Python
+        &lt;ul&gt;
+            &lt;li&gt;Django&lt;/li&gt;
+            &lt;li&gt;Flask&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Ruby
+        &lt;ul&gt;
+            &lt;li&gt;Rails&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <h6>Frameworks</h6>
+                <ul style="list-style-type: disc">
+                    <li>JavaScript
+                        <ul>
+                            <li>node.js</li>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </li>
+                    <li>Python
+                        <ul>
+                            <li>Django</li>
+                            <li>Flask</li>
+                        </ul>
+                    </li>
+                    <li>Ruby
+                        <ul>
+                            <li>Rails</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="points">Tables</h5>
+                <h5 class="points">Embedding YouTube videos</h5>
+                
+            </article>
         </div>
     </body>
 </html>
