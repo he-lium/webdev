@@ -96,3 +96,12 @@ figure {
 .no-underline {
     text-decoration: none;
 }
+
+.stylised table {
+  border-collapse: collapse;
+}
+
+.stylised th, .stylised td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}

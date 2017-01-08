@@ -149,6 +149,97 @@ Handle the flask with care. &lt;strong&gt;Do not drop it or you may risk serious
                     </li>
                 </ul>
                 <h5 class="points">Tables</h5>
+                <p>Tables are used in your website to organise data into columns and rows. HTML provides several elements to form the structure for tables. An example is given below:</p>
+                <pre><code class="html">&lt;table&gt;
+    &lt;caption&gt;Yearly Results Report&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Subject&lt;/th&gt;
+        &lt;th&gt;Marks&lt;/th&gt;
+        &lt;th&gt;Grade&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;English&lt;/td&gt;
+        &lt;td&gt;77&lt;/td&gt;
+        &lt;td&gt;B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Mathematics&lt;/td&gt;
+        &lt;td&gt;91&lt;/td&gt;
+        &lt;td&gt;A&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <table>
+                    <caption>Yearly Results Report</caption>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>77</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>91</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+                <p>An explanation of what each element does:
+                <ul style="list-style-type: disc">
+                    <li><span class="code">&lt;table&gt;</span> – Tells the browser that the data within this tag is to be organised in a table. Contains one or more <span class="code">&lt;tr&gt;</span> rows.</li>
+                    <li><span class="code">&lt;caption&gt;</span> – Table caption that briefly outlines what the table and data are about.</li>
+                    <li><span class="code">&lt;tr&gt;</span> – Table row. Each row has a number of cells (columns).</li>
+                    <li><span class="code">&lt;th&gt;</span> – Table header. Belongs to the first header and the describes the data in its own column.</li>
+                    <li><span class="code">&lt;td&gt;</span> – Table cell (table data). Having multiple cells in a row will make more columns in the table.</li>
+                </ul>
+                <h6 class="points">Table styling and borders</h6>
+                <p>Adding borders to tables makes it easier for the user to read the table. Applying CSS styles to table borders involves changing the <span class="code">border</span> property in each table cell:</p>
+                </p>
+                <pre><code class="css">table {
+    border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}</code></pre>
+                <div class="stylised">
+                    <table>
+                        <caption>Yearly Results Report</caption>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>77</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>91</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>69</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Geography</td>
+                            <td>80</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Commerce</td>
+                            <td>87</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+                </div>
                 <h5 class="points">Embedding YouTube videos</h5>
                 
             </article>
