@@ -91,6 +91,50 @@
             color: limegreen;
         }
     &lt;/style&gt;</code></pre>
+                <h5 class="points">Fonts</h5>
+                <p>You can use CSS to change the font of the text using the <span class="code">font-family</span> property:</p>
+                <pre><code>.arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}</code></pre>
+<pre><code class="html">&lt;p class="arial"&gt; Arial, unlike Times New Roman, is a sans serif font.&lt;/p&gt;</code></pre>
+                <p class="arial">Arial, unlike Times New Roman, is a sans serif font.</p>
+                <p>Other possible fonts:</p>
+<pre><code>font-family: Courier New, Courier, monospace;
+</code></pre>
+                <h5 class="points">Decorating text</h5>
+                <h6 class="points">Alignment</h6>
+                <p>The <span class="code">text-align</span> property is used to set the horizontal alignment of the text. You can set it to center, left, right or justified. For example:</p>
+<pre><code class="html">&lt;p style="font-size: 26px; text-align: left"&gt;Java is a belt fed 240G automatic weapon where sometimes the belt has rounds, sometimes it doesn’t, and when it doesn’t during firing you get an NullPointerException, the gun explodes and you die.&lt;/p&gt;
+&lt;p style="font-size: 26px; text-align: right"&gt;Python is the “v2/v3” double barrel shotgun, only one barrel will shoot at a time, and you never end up shooting the recommended one. Also I probably should have used a line tool to draw that.&lt;/p&gt;
+&lt;p style="font-size: 26px; text-align: center"&gt;JavaScript is a sword without a hilt.&lt;/p&gt;</code></pre>
+                <p style="font-size: 26px; text-align: left">Java is a belt fed 240G automatic weapon where sometimes the belt has rounds, sometimes it doesn’t, and when it doesn’t during firing you get an NullPointerException, the gun explodes and you die.</p>
+                <p style="font-size: 26px; text-align: right">Python is the “v2/v3” double barrel shotgun, only one barrel will shoot at a time, and you never end up shooting the recommended one. Also I probably should have used a line tool to draw that.</p>
+                <p style="font-size: 26px; text-align: center">JavaScript is a sword without a hilt.</p>
+                <h6 class="points" style="display: inline;">Letter spacing</h6> lets you change... the letter spacing.
+<pre><code class="html">&lt;h3 style="letter-spacing: 6px"&gt;AESTHETIC AESTHETIC AESTHETIC&lt;/h3&gt;</code></pre>
+                <h3 style="letter-spacing: 6px">AESTHETIC AESTHETIC AESTHETIC</h3>
+                <h6 class="points">Underlining</h6>
+                <p>Use the <span class="code">text-decoration</span> property to add or remove underlines or strikethroughs.</p>
+<pre><code class="html">&lt;h4 style="text-align: center; text-decoration: underline"&gt;My giant treasure vault :)&lt;/h4&gt;
+&lt;h4 style="text-align: center; text-decoration: line-through"&gt;Your ATAR rank is &lt; 30.00&lt;/h4&gt;</code></pre>
+                <h4 style="text-align: center; text-decoration: underline">My giant treasure vault :)</h4>
+                <h4 style="text-align: center; text-decoration: line-through">Your ATAR rank is < 30.00</h4>
+                <p>You know how <a href="https://abc.xyz/" target="_blank">links by default have an underline?</a> The <span class="code">text-decoration</span> can also remove underlines:</p>
+<pre><code class="css">.no-underline {
+    text-decoration: none;
+}</code></pre><pre><code class="html">&lt;p&gt;&lt;a href="https://www.unsw.edu.au/" target="_blank" class="no-underline"&gt;University of New South Wales&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+                <p><a href="https://www.unsw.edu.au/" target="_blank" class="no-underline">University of New South Wales</a></p>
+                <h6 class="points">Text Shadows</h6>
+                <p>The <span class="code">text-shadow</span> property adds shadows to text. When using the property, specify in the following order: 
+                <ul style="text-indent: 40px;">
+                    <li>The position of the horizontal shadow</li>
+                    <li>The position of the vertical shadow</li>
+                    <li>The shadow colour</li>
+                </ul></p>
+<pre><code class="html">&lt;h6 style="text-shadow: 1px 2px darkblue"&gt;"I believe life is an intelligent thing: that things aren't random." -Steve Jobs&lt;/h6&gt;</code></pre>
+                <h6 style="text-shadow: 1px 2px darkblue">"I believe life is an intelligent thing: that things aren't random." -Steve Jobs</h6>
             </article>
         </div>
     </body>
