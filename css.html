@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
-        <link rel="stylesheet" href="css/style.css?">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-light.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -52,8 +52,45 @@
             font-size: 40px;
             color: cyan;
         }
+
+        .intro {
+            font-size: 60px;
+            color: black;
+        }
     &lt;/style&gt;
+    &lt;!-- add style to tags that have attribute class="intro" --&gt;
 &lt;/head&gt;</code></pre>
+                <h5 class="points">Class selectors</h5>
+                <p>The <span class="code">intro</span> in the sample above is called a class selector. It applies the styles (black colour, 60 pixel font size) to all elements that have their <span class="code">class</span> attribute as "intro". For example, it would apply to this:</p>
+                <pre><code class="html">&lt;p class="intro"&gt;This paragraph is huge!&lt;/p&gt;</code></pre>
+                <p class="intro">This paragraph is huge!</p>
+                <h5 class="points">Colors</h5>
+                <p>You can use CSS to make your web page a lot more colourful by adding colour to your HTML elements. Colours are made by mixing <span style="color: red">RED</span>, <span style="color: green">GREEN</span> and <span style="color: blue">BLUE</span> light.</p>
+                <pre><code>&lt;h4 style="color: rgb(255, 0, 255);"&gt;This heading appears magenta&lt;/h4&gt;</code></pre>
+                <div class="example" style="padding-left: 4.0em; display: block;">
+                    <h4 style="color: rgb(255, 0, 255);">This heading appears magenta</h4>
+                </div>
+                <p>When using <span class="code">rgb(r, g, b)</span> to describe a colour like the heading above, you specify three numbers for the red, green and blue components of that number. Each number must be between 0 and 255 inclusive. If you need help finding the right colour, a tool that uses sliders to get the right colour can be found <a href="https://www.google.com.au/search?q=colour+picker" target="_blank">here</a>.</p>
+                <h6 class="points">Colour names</h6>
+                <p>An alternative to using numbers to describe the colour, you can also pick from a number of different colour names. For example:</p>
+                <pre><code>&lt;h4 style="color: darkblue"&gt;This heading is dark blue&lt;/h4&gt;</code></pre>
+                <div class="example" style="padding-left: 4.0em; display: block;">
+                    <h4 style="color: darkblue">This heading is dark blue</h4>
+                </div>
+                <p><a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">Here is a list of names that CSS recognises as colours.</a><p>
+                <h6 class="points">Background Colour</h5>
+                <p>Use the <span class="code">background-color</span> property to change the highlighter colour behind the text:</p>
+                <pre><code class="html">&lt;p style="background-color: rgb(30, 30, 30); color: darkorange"&gt;Happy Halloween! Mwahahahahaha&lt;/p&gt;</code></pre>
+                <p style="background-color: rgb(30, 30, 30); color: darkorange">Happy Halloween! Mwahahahahaha</p>
+                <p>If you want the colours to apply to the entire website, add those properties to the body tag:</p>
+                <pre><code>&lt;head&gt;
+    &lt;!-- Apply this for a hacker green look! --&gt;
+    &lt;style&gt;
+        body {
+            background-color: black;
+            color: limegreen;
+        }
+    &lt;/style&gt;</code></pre>
             </article>
         </div>
     </body>
