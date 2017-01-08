@@ -197,7 +197,7 @@ Handle the flask with care. &lt;strong&gt;Do not drop it or you may risk serious
                 <h6 class="points">Table styling and borders</h6>
                 <p>Adding borders to tables makes it easier for the user to read the table. Applying CSS styles to table borders involves changing the <span class="code">border</span> property in each table cell:</p>
                 </p>
-                <pre><code class="css">table {
+                <pre style="margin-bottom: 1.0em;"><code class="css">table {
     border-collapse: collapse;
 }
 
@@ -205,6 +205,9 @@ th, td {
   border: 1px solid #cecfd5;
   padding: 10px 15px;
 }</code></pre>
+                <p style="text-align: center; font-size: 14px;">
+                    sidenote: the <span class="code">border-collapse</span> property above prevents adjacent cells from doubling their own borders such that it would be 2px wide.
+                </p>
                 <div class="stylised">
                     <table>
                         <caption>Yearly Results Report</caption>
@@ -241,7 +244,24 @@ th, td {
                     </table>
                 </div>
                 <h5 class="points">Embedding YouTube videos</h5>
-                
+                <p>To add YouTube videos to your website:</p>
+                <ol style="text-indent: 40px;">
+                    <li>Look at the video URL and get the video id.
+                        <ul>
+                            <li>If the url is https://www.youtube.com/watch?v=<strong>qOOaH6BAwvY</strong> then the id is qOOaH6BAwvY</li>
+                        </ul>
+                    </li>
+                    <li>In your HTML document, add this <span class="code">&lt;iframe&gt;</span> tag, including your video id in the <span class="code">src</span> attribute:
+                    <pre><code>&lt;!-- Insert the video id after embed/ --&gt;
+&lt;iframe src="https://www.youtube.com/embed/qOOaH6BAwvY"
+width="800" height="450" frameborder="0"&gt;
+&lt;/iframe&gt;</code></pre></li>
+                    <li>Specify the height and width of the YouTube embedded video.</li>
+                </ol>
+                <!-- Insert the video id after embed/ -->
+                <iframe src="https://www.youtube.com/embed/qOOaH6BAwvY"
+                width="800" height="450" frameborder="0">
+                </iframe>
             </article>
         </div>
     </body>
